@@ -10,7 +10,7 @@
  * Copyright 2011-2020 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
- url(https://fonts.googleapis.com/css?family=Dosis:300,400);
+@import url("https://fonts.googleapis.com/css?family=Dosis:300,400");
 
 :root {
   --blue: #007bff;
@@ -282,8 +282,26 @@ select {
 #jc_button:hover {
   background-color:rgb(165, 98, 98);
   color: rgb(243, 243, 243);
-  transition: 500ms
-  
+  transition: 500ms 
+}
+
+
+#jc_button_2 {
+  font-size: 1.4rem;
+  text-decoration: none;
+  background-color: transparent;
+  color: white;
+  border-color:  white;
+  border-width: 2px;
+  border-style: solid;
+  padding: 0.7em 4em;
+  border-radius: 25px;
+}
+
+#jc_button_2:hover {
+  background-color: rgba(68, 68, 68, 0.521);
+  color: rgb(243, 243, 243);
+  transition: 500ms 
 }
 
 button,
@@ -10156,6 +10174,17 @@ p {
   text-shadow: none;
 }
 
+
+
+.masthead-subheading::selection,
+h1::selection,
+#click_button::selection,
+#get_touch::selection,
+#jc_button_2::selection
+ {
+  background:rgb(180, 180, 180);
+ }
+
 img::-moz-selection {
   background: transparent;
 }
@@ -10275,7 +10304,7 @@ header.masthead .masthead-subheading {
 }
 header.masthead .masthead-heading {
   position: relative;
-  color: rgb(178, 190, 187);
+  color: rgb(208, 212, 211);
   font-family:'Courier New', Courier, monospace;
   top: 10px;
   font-size: 3.25rem;
