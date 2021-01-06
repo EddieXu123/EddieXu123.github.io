@@ -268,6 +268,24 @@ select {
   word-wrap: normal;
 }
 
+#jc_button {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: rgb(163, 89, 89);
+  border-color:  rgb(163, 89, 89);
+  border-width: 2px;
+  border-style: solid;
+  padding: 0.7em 4em;
+  border-radius: 25px;
+}
+
+#jc_button:hover {
+  background-color:rgb(165, 98, 98);
+  color: rgb(243, 243, 243);
+  transition: 500ms
+  
+}
+
 button,
 [type=button],
 [type=reset],
@@ -432,7 +450,8 @@ h6, .h6 {
 }
 #about_me_name:hover:after {
   content: "Eddie Xu";
-  color: rgb(85, 94, 85);
+  font-size: 110%;
+  color: rgb(115, 60, 131);
   transition: all 500ms ease;
   background-image: url("data:image/svg+xml;charset=utf8,%3Csvg id='squiggle-link' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:ev='http://www.w3.org/2001/xml-events' viewBox='0 0 20 4'%3E%3Cstyle type='text/css'%3E.squiggle{animation:shift .3s linear infinite;}@keyframes shift {from {transform:translateX(0);}to {transform:translateX(-20px);}}%3C/style%3E%3Cpath fill='none' stroke='%23453886' stroke-width='2' class='squiggle' d='M0,3.5 c 5,0,5,-3,10,-3 s 5,3,10,3 c 5,0,5,-3,10,-3 s 5,3,10,3'/%3E%3C/svg%3E");
   background-position: bottom;
@@ -453,16 +472,20 @@ h6, .h6 {
 }
 #about_me_email:hover:after {
   content: "erx@case.edu";
+  font-size: 103%;
+  position: relative;
+  right: 5.5%;
   box-shadow:
-1px 1px #373737,
-2px 2px #373737,
-3px 3px #373737,
-4px 4px #373737,
-5px 5px #373737,
-6px 6px #373737;
--webkit-transform: translateX(-3px);
-transform: translateX(-3px);
-transition: .5s ease;
+  1px 1px #373737,
+  2px 2px #373737,
+  3px 3px #373737,
+  4px 4px #373737,
+  5px 5px #373737,
+  6px 6px #373737;
+  color: rgb(48, 61, 13);
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+  transition: .5s ease;
   
 }
 
@@ -484,10 +507,11 @@ transition: .5s ease;
   content: "School";
   
 }
-#about_me_school:hover:after {
-  font-size: 90%;
-  content: "Case Western Reserve";
 
+#about_me_school:hover:after {
+  font-size: 85%;
+  content: "Case Western Reserve";
+  color: rgb(87, 88, 151);
   -webkit-mask-image: linear-gradient(-75deg, rgba(63, 19, 63, 0.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
   -webkit-mask-size: 200%;
   animation: shine 2s infinite;
@@ -505,7 +529,7 @@ transition: .5s ease;
 #about_me_major:hover:after {
   content: "Computer Science";
   border: none;
-  color: rgb(112, 109, 109);
+  color: rgb(184, 48, 77);
   padding: 10px;
   font-size: 23px;
   border-radius: 5px;
@@ -523,9 +547,9 @@ transition: .5s ease;
 }
 #about_me_grad:hover:after {
   content: "May 2022";
-  color: rgb(94, 85, 85);
-  box-shadow: 0 0 0 2px #4d3e3e;
-transition: .5s ease;
+  font-size: 110%;
+  color: rgb(40, 161, 70);
+transition: 1s ease;
 
 }
 
@@ -2758,6 +2782,9 @@ fieldset:disabled a.btn {
 }
 
 .btn-dark {
+  position: relative;
+  bottom: 5px;
+  left: 5px;
   color: #fff;
   background-color: #343a40;
   border-color: #343a40;
@@ -4153,6 +4180,7 @@ input[type=button].btn-block {
   }
 }
 @media (min-width: 576px) {
+  
   .navbar-expand-sm {
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -4195,6 +4223,7 @@ input[type=button].btn-block {
   }
 }
 @media (min-width: 768px) {
+  
   .navbar-expand-md {
     flex-flow: row nowrap;
     justify-content: flex-start;
@@ -4548,6 +4577,7 @@ input[type=button].btn-block {
   margin-bottom: 0.75rem;
 }
 @media (min-width: 576px) {
+
   .card-deck {
     display: flex;
     flex-flow: row wrap;
@@ -5235,7 +5265,6 @@ a.badge-dark:focus, a.badge-dark.focus {
     border-left-width: 1px;
   }
 }
-@media (min-width: 992px) {
   .list-group-horizontal-lg {
     flex-direction: row;
   }
@@ -10602,4 +10631,25 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+@media (min-width: 500px) {
+  #about_me_email:hover:after {
+    position: relative;
+    left: 0%;
+  }
+}
+
+@media (min-width: 992px) {
+  #about_me_email:hover:after {
+    position: relative;
+    left: 0%;
+  }
+}
+
+@media (min-width: 1190px) {
+  #about_me_email:hover:after {
+    position: relative;
+    left: -3%;
+  }
 }
