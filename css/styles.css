@@ -479,7 +479,14 @@ h6, .h6 {
   padding-bottom: .3em;
   text-decoration: none;
 }
+#social_log br{ display: none; }
+@media all and (max-width: 480px) {
+    .break2 { display: inline }
+}
 
+@media all and (max-width: 320px) {
+    br { display: inline }
+}
 #about_me_email {
   font-size: 150%;
   padding: 0.75rem;
