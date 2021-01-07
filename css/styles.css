@@ -10507,10 +10507,11 @@ header.masthead .masthead-heading {
 }
 .timeline .timeline-heading h4 {
   margin-top: 0;
-  color: inherit;
+  color: black;
 }
 .timeline .timeline-heading h4.subheading {
   text-transform: none;
+  color: rgb(141, 52, 52);
 }
 .timeline .timeline-body > ul,
 .timeline .timeline-body > p {
