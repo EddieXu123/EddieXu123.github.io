@@ -268,7 +268,20 @@ select {
   word-wrap: normal;
 }
 
-#jc_button {
+@media (min-width: 546px) {
+  #jc_button5 {
+    display: none;
+  }
+}
+@media (max-width: 545px) {
+  #jc_button4 {
+    position: relative;
+    margin: auto;
+    display: none;
+  }
+}
+
+#jc_button4 {
   font-size: 1.4rem;
   text-decoration: none;
   color: rgb(163, 89, 89);
@@ -279,7 +292,23 @@ select {
   border-radius: 25px;
 }
 
-#jc_button:hover {
+#jc_button4:hover {
+  background-color:rgb(165, 98, 98);
+  color: rgb(243, 243, 243);
+  transition: 500ms 
+}
+#jc_button5 {
+  font-size: 1.4rem;
+  text-decoration: none;
+  color: rgb(163, 89, 89);
+  border-color:  rgb(163, 89, 89);
+  border-width: 2px;
+  border-style: solid;
+  padding: 0.7em 4em;
+  border-radius: 25px;
+}
+
+#jc_button5:hover {
   background-color:rgb(165, 98, 98);
   color: rgb(243, 243, 243);
   transition: 500ms 
@@ -10699,9 +10728,16 @@ section#contact form#contactForm :-ms-input-placeholder {
   
 }
 
-@media (max-width: 800px) {
+@media (max-width: 767px) {
   #monk {
     display: none;
+  }
+  #intro_stuff {
+    text-align: center;
+  }
+  #about_me_email:hover:after {
+    position: relative;
+    left: 0%;
   }
 }
 
