@@ -10668,6 +10668,13 @@ section#contact form#contactForm :-ms-input-placeholder {
     position: relative;
     left: 0%;
   }
+  
+}
+
+@media (max-width: 800px) {
+  #monk {
+    display: none;
+  }
 }
 
 @media (min-width: 992px) {
