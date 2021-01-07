@@ -10221,6 +10221,25 @@ h1::selection,
   background:rgb(180, 180, 180);
  }
 
+
+#jc_button_9 {
+  font-size: 1.4rem;
+  text-decoration: none;
+  background-color: transparent;
+  color: rgb(108, 108, 136);
+  border-color: rgb(108, 108, 136);
+  border-width: 2px;
+  border-style: solid;
+  padding: 0.7em 4em;
+  border-radius: 25px;
+}
+
+#jc_button_9:hover {
+  background-color: rgb(108, 108, 136);
+  color: rgb(243, 243, 243);
+  transition: 500ms 
+}
+
 img::-moz-selection {
   background: transparent;
 }
@@ -10704,6 +10723,11 @@ section#contact form#contactForm :-ms-input-placeholder {
     position: relative;
     left: 0%;
   }
+  
+  .resume_center{
+    text-align: center;
+  }
+
 
   /* #social_log1 {
     position: relative;
