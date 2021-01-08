@@ -10216,7 +10216,8 @@ p {
 h1::selection,
 #click_button::selection,
 #get_touch::selection,
-#jc_button_2::selection
+#jc_button_2::selection,
+.nav-item a::selection
  {
   background:rgb(180, 180, 180);
  }
