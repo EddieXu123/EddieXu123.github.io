@@ -5341,7 +5341,7 @@ a.badge-dark:focus, a.badge-dark.focus {
     margin-left: -1px;
     border-left-width: 1px;
   }
-}
+
 @media (min-width: 1200px) {
   .list-group-horizontal-xl {
     flex-direction: row;
@@ -10733,27 +10733,10 @@ section#contact form#contactForm :-ms-input-placeholder {
     font-size: 80%;
   }
 
-  /* #social_log1 {
+  .rounded-circle {
     position: relative;
-    bottom: 3.35%;
-    left: 4.4%;
-  }
-  #social_log2 {
-    position: relative;
-    bottom: 3.35%;
-    left: 5.5%;
-  }
-  #social_log3 {
-    position: relative;
-    top: 3.45%;
-    left: -21.6%;
-  }
-  #social_log4 {
-    position: relative;
-    top: -2.26%;
-    left: 77.7%;
-  } */
-  
+    top: 0px;
+  } 
 }
 
 @media (max-width: 767px) {
@@ -10775,9 +10758,18 @@ section#contact form#contactForm :-ms-input-placeholder {
     position: relative;
     left: 0%;
   }
+  .rounded-circle {
+    position: relative;
+    top: 0px;
+  }
 }
 
 @media (min-width: 992px) {
+  .rounded-circle {
+    position: relative;
+    top: 0px;
+  }
+
   #about_me_email:hover:after {
     position: relative;
     left: 0%;
